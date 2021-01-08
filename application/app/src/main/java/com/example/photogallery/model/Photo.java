@@ -1,5 +1,7 @@
 package com.example.photogallery.model;
 
+import androidx.room.Entity;
+
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
 import com.fasterxml.jackson.annotation.JsonAnySetter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -25,6 +27,8 @@ import java.util.Map;
         "height_s",
         "width_s"
 })
+@Entity
+
 public class Photo {
 
     @JsonProperty("id")
